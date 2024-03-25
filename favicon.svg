@@ -1,0 +1,15 @@
+<!-- SVG created by <a href="https://github.com/costinlotreanu" target="_blank">Costin Lotreanu</a> -->
+
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="210" y="486.003" width="75" height="58" fill="#DFECFA"/>
+<rect x="536" y="494.003" width="75" height="58" fill="#DFECFA"/>
+<rect x="192" y="61.003" width="452" height="443" fill="#DFECFA"/>
+<line x1="181.5" y1="626.974" x2="181.5" y2="161.003" stroke="#4274FF" stroke-width="73"/>
+<line x1="634.5" y1="623.974" x2="634.5" y2="158.003" stroke="#4274FF" stroke-width="73"/>
+<path d="M277 41.503L535 38.503" stroke="#4274FF" stroke-width="73"/>
+<path d="M181 174.003C181 58.3892 250.426 41.503 285.5 41.503" stroke="#4274FF" stroke-width="73"/>
+<path d="M634.5 161.003C633.833 51.56 568.885 38.3951 533 38.6136" stroke="#4274FF" stroke-width="73"/>
+<path d="M196 597.662L431 452.003" stroke="#4274FF" stroke-width="73"/>
+<path d="M617.014 592.573L391 454.003" stroke="#4274FF" stroke-width="73"/>
+<rect x="145" y="668" width="526" height="131" rx="62" fill="#4274FF"/>
+</svg>

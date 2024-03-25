@@ -1,0 +1,461 @@
+:root {
+  --scrollbar-track: #edf1f4;
+  --scrollbar: #f5f5f5;
+  --scrollbar-thumb: #5d9fff;
+
+  --body-bg-clr: #b8dcff;
+  --footer-bg-clr: #6bbbff;
+  --footer-p-bg-clr: #85faac;
+  --footer-p-text-clr: black;
+  --footer-p-a-text-clr: black;
+  --footer-bg-img-clr1: #aaf0d1;
+  --footer-bg-img-clr2: #aaf0d177;
+
+  --card-bg-clr: #dfecfa;
+  --card-hover-shadow: 0px 0px 30px -2px rgba(124, 171, 242, 0.7);
+  --card-a-clr: #4671ea;
+  --card-textarea-clr: #333;
+  --card-textarea-hover-text-clr: rgba(0, 0, 255, 0.708);
+  --card-textarea-note-border-clr: #b8dcff;
+
+  --card-btn-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+
+  --card-btn-save-bg-clr: #4274ff;
+  --card-btn-save-text-clr: white;
+  --card-btn-save-hover-shadow: 0px 0px 54px -10px rgb(80, 82, 133);
+  --card-btn-save-hover-text-clr: white;
+  --card-btn-save-active-bg-clr: #0062ff;
+  --card-btn-save-active-shadow: 0px 0px 54px -10px rgb(80, 82, 133);
+  --card-btn-save-focusvisible: 2px solid #ff4742;
+
+  --card-btn-delete-border: 1px solid #ff4742;
+  --card-btn-delete-text-clr: #ff4742;
+  --card-btn-delete-focus-outline: 1px solid rgb(255, 71, 66);
+  --card-btn-delete-hover-shadow: 0px 0px 24px -2px rgba(255, 71, 66, 1);
+  --card-btn-delete-hover-text-clr: white;
+  --card-btn-delete-hover-bg-clr: #ff4742;
+  --card-btn-delete-active-shadow: 0px 0px 24px -2px rgba(255, 71, 66, 1);
+  --card-btn-delete-active-bg-clr: #fde181;
+  --card-btn-delete-active-text-clr: #ff4742;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 50rem;
+  background-color: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--scrollbar);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--scrollbar-thumb);
+}
+
+body {
+  width: 490px;
+  height: 600px;
+  position: relative;
+
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  background-color: var(--body-bg-clr);
+}
+
+h1 {
+  position: absolute;
+  top: -10rem;
+  left: 0;
+}
+
+/* ------------------------------ HEADER ---------------------------------*/
+header {
+  z-index: 1;
+  position: fixed;
+  top: 1px;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-content: center;
+}
+
+.no-elements-centered {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.opacity {
+  z-index: 2;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(2.7px);
+}
+/* ------------------------------ MAIN ---------------------------------*/
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+/* ------------------------------ FOOTER ---------------------------------*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 750px;
+  display: grid;
+  place-content: center;
+  font-weight: 400;
+  border-radius: 1rem 2rem 0 0;
+
+  background-color: var(--footer-bg-clr);
+  opacity: 1;
+  background-image: linear-gradient(
+      30deg,
+      var(--footer-bg-img-clr1) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--footer-bg-img-clr1) 87.5%,
+      var(--footer-bg-img-clr1)
+    ),
+    linear-gradient(
+      150deg,
+      var(--footer-bg-img-clr1) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--footer-bg-img-clr1) 87.5%,
+      var(--footer-bg-img-clr1)
+    ),
+    linear-gradient(
+      30deg,
+      var(--footer-bg-img-clr1) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--footer-bg-img-clr1) 87.5%,
+      var(--footer-bg-img-clr1)
+    ),
+    linear-gradient(
+      150deg,
+      var(--footer-bg-img-clr1) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--footer-bg-img-clr1) 87.5%,
+      var(--footer-bg-img-clr1)
+    ),
+    linear-gradient(
+      60deg,
+      var(--footer-bg-img-clr2) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      var(--footer-bg-img-clr2) 75%,
+      var(--footer-bg-img-clr2)
+    ),
+    linear-gradient(
+      60deg,
+      var(--footer-bg-img-clr2) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      var(--footer-bg-img-clr2) 75%,
+      var(--footer-bg-img-clr2)
+    );
+  background-size: 30px 53px;
+  background-position: 0 0, 0 0, 15px 26px, 15px 26px, 0 0, 15px 26px;
+}
+
+footer p {
+  margin: 1rem 0 0;
+  padding: 1rem 2rem;
+  background-color: var(--footer-p-bg-clr);
+  color: var(--footer-p-text-clr);
+  border-radius: 20px 20px 0 0;
+  font-size: 1rem;
+
+  z-index: 10;
+}
+
+footer p a {
+  color: var(--footer-p-a-text-clr);
+  font-weight: 500;
+}
+
+.no-elements {
+  z-index: 100;
+  backdrop-filter: blur(0px);
+  background-image: none;
+  background-color: transparent;
+}
+
+/* ------------------------------ CARD ---------------------------------*/
+
+.card {
+  margin: 1.25rem 1rem;
+  padding: 1rem 1rem 0.5rem;
+  width: 450px;
+  background: var(--card-bg-clr);
+  border-radius: 10px;
+  transition: transform 200ms;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.card:first-of-type {
+  margin-top: 6.5rem;
+}
+
+.card:last-of-type {
+  margin-bottom: 6rem;
+}
+
+.card p {
+  min-width: 0;
+}
+
+.card a {
+  display: block;
+  padding-left: 1rem;
+  color: var(--card-a-clr);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card a:hover {
+  color: var(--card-textarea-hover-text-clr);
+}
+
+.card textarea {
+  width: 100%;
+  height: 56px;
+  padding: 1rem;
+  outline: none;
+  resize: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border-color: transparent;
+  max-height: 330px;
+  color: var(--card-textarea-clr);
+  background: inherit;
+}
+
+textarea:is(:focus) {
+  border-width: 1px;
+  padding: 14px;
+  border-color: #00ceff;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__header-left {
+  align-self: center;
+  flex: 2;
+  min-width: 0;
+}
+
+.text-overflow-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card__header-right {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card__header-right > .card-btn {
+  margin-left: 0.5rem;
+}
+
+.outline-url:focus {
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  outline: 2px solid #00ceff;
+}
+
+.border-top-line {
+  position: relative;
+  bottom: -1.04rem;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background-color: var(--card-textarea-note-border-clr);
+}
+
+/* ------------------------------  Buttons general ---------------------------------*/
+
+.card-btn {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  background: transparent;
+  border-radius: 6px;
+  box-shadow: var(--card-btn-shadow);
+  cursor: pointer;
+  font-weight: 800;
+  min-height: 40px;
+  outline: 0;
+  padding: 10px 14px;
+}
+
+.display-none {
+  display: none;
+}
+
+.display {
+  display: block;
+}
+
+/* ------------------------------ Button ( DELETE ) ---------------------------------*/
+
+.card__header-btn {
+  border: var(--card-btn-delete-border);
+  color: var(--card-btn-delete-text-clr);
+  font-size: 1rem;
+}
+
+.card__header-btn:focus {
+  outline: var(--card-btn-delete-focus-outline);
+}
+
+.card__header-btn:hover {
+  box-shadow: var(--card-btn-delete-hover-shadow);
+  background-color: var(--card-btn-delete-hover-bg-clr);
+  background-position: 0 0;
+  color: var(--card-btn-delete-hover-text-clr);
+}
+
+.card__header-btn:active {
+  box-shadow: var(--card-btn-delete-active-shadow);
+  background-color: var(--card-btn-delete-active-bg-clr);
+  color: var(--card-btn-delete-hover-text-clr);
+  outline: none;
+}
+/* ------------------------------ Button ( ADD ) ---------------------------------*/
+.card__header-add-btn {
+  position: relative;
+  width: 50px;
+}
+
+.card__header-add-btn::after {
+  position: absolute;
+  bottom: 3px;
+  left: 10px;
+  content: url(images/edit.svg);
+}
+.card__header-add-btn:hover::after {
+  position: absolute;
+  bottom: 3px;
+  left: 10px;
+  content: url(images/edit-hover.svg);
+}
+
+.card__header-add-btn:active::after {
+  position: absolute;
+  bottom: 3px;
+  left: 8px;
+  content: url(images/edit-active.svg);
+}
+/* ------------------------------ Button ( SAVE URL ) ---------------------------------*/
+
+.header__btn-save-url {
+  z-index: 3;
+  margin: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  padding: 1rem 2rem;
+  color: var(--card-btn-save-text-clr);
+  background-color: var(--card-btn-save-bg-clr);
+}
+
+.header__btn-save-url:focus {
+  outline: none;
+}
+
+.header__btn-save-url:focus-visible {
+  outline: var(--card-btn-save-focusvisible);
+}
+
+.header__btn-save-url:hover {
+  box-shadow: var(--card-btn-save-hover-shadow);
+  background-position: 0 0;
+  color: var(--card-btn-save-hover-text-clr);
+  transform: scale(1.05);
+}
+
+.active {
+  padding: 1rem 3rem 1rem 2rem;
+  position: relative;
+  background-color: var(--card-btn-save-active-bg-clr);
+  z-index: 3;
+  box-shadow: var(--card-btn-save-active-shadow);
+  transition: background-color 500ms;
+}
+
+.active:before {
+  position: absolute;
+  bottom: 9px;
+  right: 12px;
+  content: url('images/favorite.svg');
+}
+
+.active:focus {
+  outline: none;
+}
+
+/* ------------------------------ Button ( CHANGE THEME ) ---------------------------------*/
+
+.change-theme {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 61px;
+  height: 61px;
+  background-image: url('images/moon.svg');
+  background-repeat: no-repeat;
+  background-size: 46px;
+  background-position: left 10px bottom 8px;
+}
+
+.change-theme:hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-position: left 10px bottom 8px;
+}
+
+.change-theme:active {
+  background-color: #ff4742;
+}

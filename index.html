@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TabScribe: Save tabs effortlessly, take notes seamlessly. Elevate your browsing experience with the perfect blend of organization and inspiration!"
+    />
+    <title>TabScribe</title>
+    <!-- Favicon licence type CC Attribution License : Vectors and icons by <a href="https://www.figma.com/community/file/1166831539721848736?ref=svgrepo.com" target="_blank">Solar Icons</a> in CC Attribution License via <a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a> -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <h1>Tab Scribe</h1>
+    <header>
+      <div class="opacity"></div>
+      <button id="saveUrlBtn" class="card-btn header__btn-save-url">
+        Bookmark
+      </button>
+      <button
+        id="changeThemeBtn"
+        class="card-btn header__btn-save-url change-theme"
+        title="change theme"
+      ></button>
+    </header>
+
+    <main>
+      <section data-container></section>
+    </main>
+
+    <template>
+      <div data-card-id class="card">
+        <div class="card__header">
+          <div class="card__header-left">
+            <p>
+              <a
+                data-card-anchor
+                tabindex="0"
+                target="_blank"
+                class="text-overflow-ellipsis outline-url"
+              ></a>
+            </p>
+          </div>
+          <div class="card__header-right">
+            <button
+              data-card-btn-note
+              class="card-btn card__header-btn card__header-add-btn"
+              title="add note"
+            ></button>
+            <button data-card-btn-delete class="card-btn card__header-btn">
+              Delete
+            </button>
+          </div>
+        </div>
+        <div class="border-top-line"></div>
+        <textarea data-card-textarea name="text-area"></textarea>
+      </div>
+    </template>
+
+    <footer>
+      <p>
+        Developed by
+        <a href="https://github.com/costinlotreanu" target="_blank"
+          >Costin Lotreanu</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
