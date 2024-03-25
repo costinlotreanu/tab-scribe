@@ -14,3 +14,6 @@
 - Depending on the note content size, if multiple lines exist, expand the area as necessary to show the entire text.
 - By saving more tabs (more than the view size), the page will auto-scroll down to the last tab.
 - If note content is added on the last tab, the page will auto-scroll to show the entire card.
+
+## How to Install and Run the Project
+### link to be added when Extension is approved by Chrome
