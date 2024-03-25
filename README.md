@@ -1,6 +1,9 @@
 # Tab Scribe
 ## This is a Chrome Extension and will only run as a Chrome Developer Extension because it uses the Chrome Tab API.
 
+## Project Description
+Save tabs effortlessly, take notes seamlessly!
+
 ### Main features:
 - Save your favorite websites and articles for later.
 - Add notes, insights, or ideas directly to your saved pages.
