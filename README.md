@@ -5,7 +5,7 @@
 ### 🚀 Save tabs effortlessly, take notes seamlessly!
 
 ### 🌟 Key features:
-- Save your favorite websites and articles for later.
+- Save your favorite websites and articles for later using chrome.tabs API
 - Add notes, insights, or ideas directly to your saved pages.
 - Enhance user experience and reduce eye strain by using the Dark Theme option.
 - Tabs, notes, and themes are stored in the browser's local storage, and loaded when the extension is reopened.
