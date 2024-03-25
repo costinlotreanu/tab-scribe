@@ -8,7 +8,8 @@
 - Save your favorite websites and articles for later.
 - Add notes, insights, or ideas directly to your saved pages.
 - Enhance user experience and reduce eye strain by using the Dark Theme option.
-
+- Tabs, notes, and themes are stored in the browser's local storage, and loaded when the extension is reopened.
+  
 ### Other features: 
 - Modify the state of the note button depending on the note content. If there's no content, the note area collapses, and the note button is shown. If content is inserted, the button disappears, and the note area expands.
 - Depending on the note content size, if multiple lines exist, expand the area as necessary to show the entire text.
