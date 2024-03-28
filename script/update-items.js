@@ -43,12 +43,26 @@ function render(item) {
   const textarea = clone.querySelector('[data-card-textarea]');
   cardId.dataset.itemId = item.id;
   anchor.href = item.url;
-  anchor.textContent = item.url;
+
+  const anchorName = renameItemURL(item.url);
+  anchor.textContent = anchorName;
   textarea.textContent = item.note;
 
   setupNote();
   deleteItem(item);
   setTextareaHigh();
+
+  function renameItemURL(string) {
+    if (string.startsWith('https://')) {
+      return string.slice(8);
+    }
+
+    if (string.startsWith('http://')) {
+      return string.slice(7);
+    }
+
+    return string;
+  }
 
   function deleteItem(item) {
     deleteBtn.addEventListener('click', e => {
