@@ -13,6 +13,10 @@
     "48": "images/icon-48.png",
     "128": "images/icon-128.png"
   },
-  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "permissions": ["scripting", "tabs"],
   "host_permissions": ["http://*/*", "https://*/*"]
 }
