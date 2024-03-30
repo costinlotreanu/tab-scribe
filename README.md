@@ -18,4 +18,4 @@
 
 ## How to Install and Run the Project
 ### The extension can be installed from Chrome Web Store
-### https://chromewebstore.google.com/detail/tab-scribe/hnenbjbmcmdbclbjecmnecfamkapajml
+https://chromewebstore.google.com/detail/tab-scribe/hnenbjbmcmdbclbjecmnecfamkapajml
