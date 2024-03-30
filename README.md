@@ -17,4 +17,5 @@
 - If note content is added on the last tab, the page will auto-scroll to show the entire card.
 
 ## How to Install and Run the Project
-### link to be added when Extension is approved by Chrome
+### The extension can be installed from Chrome Web Store
+### https://chromewebstore.google.com/detail/tab-scribe/hnenbjbmcmdbclbjecmnecfamkapajml
